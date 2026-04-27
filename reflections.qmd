@@ -1,0 +1,28 @@
+---
+title: "Reflections"
+---
+
+> "I used to stay quiet in meetings. Not because I had nothing to say — but because I was waiting for the right moment. At some point I realised the right moment doesn't always come. You make it."
+
+When I arrived in Dublin I carried the shyness I'd always had — the kind that keeps you nodding when you want to push back, that makes you volunteer last and speak softly. The MSc has forced me to unlearn a lot of that. Client presentations, group deadlines, FAI project meetings, VR boardrooms — these environments don't reward waiting.
+
+I've made mistakes here. Misread data. Misunderstood briefs. Relied on others when I should have struggled longer on my own. But those mistakes are in the work, not hidden from it. You can't document growth without documenting the stumbles.
+
+Missing home is a strange, shape-shifting thing. It doesn't go away — it just changes. Calling my parents every night helps. So does cooking: butter chicken or gulab jamuns at midnight is of its own kind. The kitchen has always been where I settle.
+
+Looking back on the spontaneous IELTS decision — the secret preparation, the exam, the offers, the conversation with my family — I don't regret any of it. Impulsive decisions, made with real preparation underneath them, tend to land. This one did.
+
+## Skills I've Developed
+
+| Skill | Where I learned it |
+|---|---|
+| Git & version control | This portfolio |
+| Quarto & web publishing | This portfolio |
+| Python & data visualisation | Gen AI vs BERT project, IoT Practicum |
+| Client communication | FAI Women's National Team project |
+| Public speaking | Seminars, VR boardroom |
+| Time management under pressure | DCU MSc workload |
+
+## Connecting to Future Goals
+
+This MSc has shown me that data skills alone are not enough — you need to communicate findings clearly and work under real constraints. The tools I've learned here (Python, Quarto, Power BI, Git) are the foundation. What I'm building on top of them — confidence, adaptability, professional instinct — is the part that matters more.

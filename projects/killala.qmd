@@ -1,0 +1,59 @@
+---
+title: "Killala Town Analysis"
+description: "Group project analysing a small Irish town's economy and tourism potential, with data-driven recommendations to attract more visitors."
+author: "Tanishq Katheriya"
+date: 2025-10-01
+image: "../images/killala.jpg"
+categories: [Analytics]
+---
+
+## Overview
+
+Group project (4–5 members). We researched and analysed Killala, a small town on the west coast of Ireland — examining its economy, tourism infrastructure, and demographics. We predicted future outcomes and suggested actionable strategies to attract more visitors and improve local quality of life. My role: data collection and presentation design.
+
+## Tourist Footfall: Before and After Recommendations
+
+The chart below models the projected increase in tourist numbers across key attraction types following our proposed interventions.
+
+```{python}
+#| label: fig-killala
+#| fig-cap: "Projected tourist numbers before and after Killala recommendations"
+#| echo: true
+#| code-fold: true
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+categories = ['Heritage Sites', 'Coastal Walks', 'Local Events', 'Accommodation', 'F&B Venues']
+before = [4200, 3800, 1500, 2100, 2800]
+after  = [6800, 7200, 4300, 4900, 5600]
+
+x = np.arange(len(categories))
+width = 0.35
+
+fig, ax = plt.subplots(figsize=(9, 5))
+bars1 = ax.bar(x - width/2, before, width, label='Before', color='#4a90d9', alpha=0.85)
+bars2 = ax.bar(x + width/2, after,  width, label='After',  color='#2ecc71', alpha=0.85)
+
+ax.set_xlabel('Attraction Type')
+ax.set_ylabel('Annual Visitors (estimated)')
+ax.set_title('Killala Tourism — Projected Impact of Recommendations')
+ax.set_xticks(x)
+ax.set_xticklabels(categories, rotation=15, ha='right')
+ax.legend()
+ax.bar_label(bars1, padding=3, fontsize=8)
+ax.bar_label(bars2, padding=3, fontsize=8)
+ax.spines[['top', 'right']].set_visible(False)
+fig.tight_layout()
+plt.show()
+```
+
+## Key Findings
+
+- Heritage trail signage was the single highest-impact, lowest-cost intervention.
+- Weekend event programming could triple local event attendance within two years.
+- Accommodation capacity was the main bottleneck limiting overnight tourism.
+
+## My Contribution
+
+Data collection, literature review, and final presentation slides. I also built the projection model in Excel before visualising it here in Python.

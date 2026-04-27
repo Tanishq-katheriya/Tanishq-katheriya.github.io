@@ -1,0 +1,132 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Gen AI vs BERT\"\n",
+        "description: \"Comparing Generative AI and BERT models on Amazon retail data — local deployment with Ollama, evaluated on accuracy, recall, and F1 score.\"\n",
+        "author: \"Tanishq Katheriya\"\n",
+        "date: 2025-12-01\n",
+        "image: \"../images/genai.jpg\"\n",
+        "categories: [Machine Learning]\n",
+        "---\n",
+        "\n",
+        "## Overview\n",
+        "\n",
+        "Semester 2 project. Used Amazon retail data to compare a Generative AI model and BERT for a text classification task. Both models were run locally using Ollama and VS Code. Evaluation metrics: accuracy, recall, F1 score. Gen AI outperformed BERT across all three.\n",
+        "\n",
+        "## Model Performance Comparison"
+      ],
+      "id": "8deee144"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| label: fig-genai\n",
+        "#| fig-cap: Gen AI vs BERT — model evaluation metrics\n",
+        "#| echo: true\n",
+        "#| code-fold: true\n",
+        "\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "metrics = ['Accuracy', 'Recall', 'F1 Score']\n",
+        "gen_ai  = [92, 89, 90]\n",
+        "bert    = [85, 81, 83]\n",
+        "\n",
+        "x = np.arange(len(metrics))\n",
+        "width = 0.35\n",
+        "\n",
+        "fig, ax = plt.subplots(figsize=(8, 5))\n",
+        "bars1 = ax.bar(x - width/2, gen_ai, width, label='Gen AI',  color='#9b59b6', alpha=0.85)\n",
+        "bars2 = ax.bar(x + width/2, bert,   width, label='BERT',    color='#e67e22', alpha=0.85)\n",
+        "\n",
+        "ax.set_ylim(0, 100)\n",
+        "ax.set_ylabel('Score (%)')\n",
+        "ax.set_title('Gen AI vs BERT — Performance on Amazon Retail Data')\n",
+        "ax.set_xticks(x)\n",
+        "ax.set_xticklabels(metrics)\n",
+        "ax.legend()\n",
+        "ax.bar_label(bars1, fmt='%d%%', padding=3)\n",
+        "ax.bar_label(bars2, fmt='%d%%', padding=3)\n",
+        "ax.spines[['top', 'right']].set_visible(False)\n",
+        "fig.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "fig-genai",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Radar Chart — Full Profile"
+      ],
+      "id": "28a10563"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| label: fig-radar\n",
+        "#| fig-cap: Radar chart comparing Gen AI and BERT across all metrics\n",
+        "#| echo: true\n",
+        "#| code-fold: true\n",
+        "\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "labels  = ['Accuracy', 'Recall', 'F1 Score', 'Speed', 'Ease of Use']\n",
+        "gen_ai  = [92, 89, 90, 70, 85]\n",
+        "bert    = [85, 81, 83, 88, 72]\n",
+        "\n",
+        "angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()\n",
+        "gen_ai_vals = gen_ai + [gen_ai[0]]\n",
+        "bert_vals   = bert   + [bert[0]]\n",
+        "angles      = angles + [angles[0]]\n",
+        "label_vals  = labels + [labels[0]]\n",
+        "\n",
+        "fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))\n",
+        "ax.plot(angles, gen_ai_vals, 'o-', linewidth=2, label='Gen AI',  color='#9b59b6')\n",
+        "ax.fill(angles, gen_ai_vals, alpha=0.2, color='#9b59b6')\n",
+        "ax.plot(angles, bert_vals,   'o-', linewidth=2, label='BERT',    color='#e67e22')\n",
+        "ax.fill(angles, bert_vals,   alpha=0.2, color='#e67e22')\n",
+        "ax.set_thetagrids(np.degrees(angles[:-1]), label_vals[:-1])\n",
+        "ax.set_ylim(0, 100)\n",
+        "ax.set_title('Model Capability Profile', pad=20)\n",
+        "ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "fig-radar",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Key Takeaways\n",
+        "\n",
+        "- Gen AI achieved higher accuracy and F1, but BERT was faster at inference.\n",
+        "- Local deployment via Ollama made reproducibility straightforward.\n",
+        "- Prompt engineering had a significant effect on Gen AI output quality."
+      ],
+      "id": "f6b51ce1"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\tashu\\AppData\\Local\\Python\\pythoncore-3.14-64\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

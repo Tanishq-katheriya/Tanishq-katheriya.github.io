@@ -1,0 +1,42 @@
+---
+title: "About Me"
+---
+
+## My Story — From Bhopal to Dublin
+
+::: {.glass style="padding:1.5rem;border-radius:20px;margin-bottom:1.5rem;"}
+**🎯 The Secret Leap**
+
+Last semester in Bhopal, I decided to study abroad – and told no one. I researched forums, consultancies, Reddit, prepared for IELTS in secret. When I finally passed and got offers from Maynooth and DCU, I told my family. They were shocked, then happy. That conversation changed everything.
+:::
+
+::: {.glass style="padding:1.5rem;border-radius:20px;margin-bottom:1.5rem;"}
+**🌊 Dublin Days & 1am Street Music**
+
+September 2025 – I landed at DCU, moved into Aspen, made friends from everywhere. Late nights, gaming, random chats. We travelled to Howth, Bray, Malahide. One night at 1am, we found street musicians playing drums and guitar – my friend grabbed the guitar and joined them. I filmed it. That was the real Ireland.
+:::
+
+::: {.glass style="padding:1.5rem;border-radius:20px;margin-bottom:1.5rem;"}
+**🍳 Shyness, Cooking, and Calling Home**
+
+I was always the quiet one in meetings. But I pushed myself into seminars, guest lectures, presentations. It was terrifying – but I did it. Cooking is my anchor: butter chicken, gulab jamuns from bread, whatever reminds me of home. My friends say it's restaurant quality. I call my parents every night. That keeps me grounded.
+:::
+
+::: {.glass style="padding:1.5rem;border-radius:20px;margin-bottom:1.5rem;"}
+**🎓 DCU – Where I Learned to Handle Pressure**
+
+Studying at DCU wasn't just about lectures and assignments. The workload was intense – deadlines, group projects, certifications, reflections, and client presentations all at once. But that pressure shaped me. I learned to manage time, lead a team, and present under stress – like the time I had to prepare a client presentation in two hours and deliver it to the Football Association of Ireland. I still don't know Python perfectly, and I still need help with Power BI. But I know how to research, structure, communicate, and adapt. Even my English fluency improved – from struggling to find words to confidently speaking in meetings. DCU didn't just give me skills; it gave me resilience.
+:::
+
+## Skills & Tools
+
+- Python (basic, with assistance)
+- Power BI (dashboards)
+- SQL (basic queries)
+- Quarto (this website)
+- Excel (advanced analytics)
+- AI-assisted development
+
+## Goals
+
+I'm building toward a career where data analysis meets real-world decision-making — whether in business intelligence, smart cities, or sports analytics. The MSc at DCU is giving me the technical foundation; the rest I'm learning by doing.

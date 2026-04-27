@@ -1,0 +1,10 @@
+---
+title: "Projects"
+listing:
+  type: grid
+  contents: "*.qmd"
+  sort: "date desc"
+  fields: [image, title, description, categories, date]
+---
+
+A selection of analytical and technical projects from my MSc in Business Analytics at DCU — spanning tourism data, NLP model comparison, IoT prediction, and sports consulting.

@@ -1,0 +1,31 @@
+---
+title: "Contact"
+---
+
+Whether it's about data, food experiments, or anything in between — I'm always happy to connect.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+**📧 Email**
+
+[tanishq.katheriya2@mail.dcu.ie](mailto:tanishq.katheriya2@mail.dcu.ie)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**💼 LinkedIn**
+
+[linkedin.com/in/tk23](https://www.linkedin.com/in/tk23){target="_blank"}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**💻 GitHub**
+
+[github.com/Tanishq-katheriya](https://github.com/Tanishq-katheriya){target="_blank"}
+:::
+
+:::
+
+## Professional References
+
+Available on request. Please reach out via email.

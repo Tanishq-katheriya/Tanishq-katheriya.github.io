@@ -27,11 +27,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,13 +43,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54bcdea0c76d8a311ffcd0698435ef57.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8bec37015dfe443b6165a7a6e90d92dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,18 +71,71 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;family=Playfair+Display:ital,wght@1,400;1,500&amp;display=swap" rel="stylesheet">
 
 
 </head>
 
-<body class="quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo.png" alt="TK" class="navbar-logo light-content">
+    <img src="./images/logo.png" alt="TK" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Tanishq Katheriya</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./reflections.html"> 
+<span class="menu-text">Reflections</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./docs/resume.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Tanishq-katheriya" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -114,6 +169,7 @@ ul.task-list li input[type="checkbox"] {
   <a href="#hobbies" class="sm-hide">Hobbies</a>
   <a href="#gallery">Gallery</a>
   <a href="#contact">Contact</a>
+  <button id="toggle-btn" title="Toggle theme">🌙</button>
 </nav>
 
 <section id="hero">
@@ -124,46 +180,131 @@ ul.task-list li input[type="checkbox"] {
     <p class="fade d4" style="margin-top:1.2rem;font-size:0.92rem;max-width:440px;color:var(--muted);">
       International student · Home chef · Perpetual learner
     </p>
-    <!-- Spotify-style music player -->
-    <div id="spotify-player" class="glass fade d5">
-      <div id="sp-track-info">
-        <div id="sp-track-icon">🎵</div>
-        <div id="sp-track-text">
-          <div id="sp-track-name">Lofi Beats to Chill and Focus</div>
-          <div id="sp-track-sub">Music to Chill &amp; Focus</div>
-        </div>
-      </div>
-      <div id="sp-controls">
-        <button id="sp-prev" title="Previous">⏮</button>
-        <button id="sp-play" title="Play / Pause">▶</button>
-        <button id="sp-next" title="Next">⏭</button>
-      </div>
-      <div id="sp-right">
-        <span id="sp-time">0:00</span>
-        <input type="range" id="sp-vol" min="0" max="1" step="0.05" value="0.45" title="Volume">
-        <span style="font-size:0.8rem;">🔊</span>
-      </div>
-      <!-- Hidden audio element for local tracks -->
-      <audio id="wave-audio" preload="none">
-        <source src="sounds/waves.mp3" type="audio/mpeg">
-      </audio>
-    </div>
 
-    <!-- Rain video — visible floating window, shown when that track is active -->
-    <div id="yt-window" class="glass fade d5" style="display:none; margin-top:1rem; max-width:520px; border-radius:20px; overflow:hidden; position:relative;">
-      <div style="background:rgba(0,0,0,0.4); padding:0.5rem 1rem; display:flex; align-items:center; gap:0.6rem; border-bottom:1px solid var(--border-c);">
-        <span style="font-size:0.9rem;">🌧️</span>
-        <span style="font-size:0.78rem; color:var(--text-2); font-family:'DM Sans',sans-serif; letter-spacing:0.04em;">Rain to Study To · Music to Chill &amp; Focus</span>
-      </div>
-      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-        <iframe id="yt-iframe" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; encrypted-media" allowfullscreen="" src="about:blank">
-        </iframe>
-      </div>
-    </div>
+    <!-- Spotify‑like glass audio player: expands on hover, wider, single play/pause, no duplicate name -->
+<div id="custom-audio-player" class="glass" style="
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+  cursor: default;
+">
+  <!-- Collapsed view (always visible) – only track name with music note -->
+  <div id="collapsed-view" style="display: flex; align-items: center; gap: 8px;">
+    <span style="font-size: 1rem;">🎵</span>
+    <span id="track-name" style="font-size: 0.95rem; font-weight: 500; color: var(--text-2);">Lofi Beats</span>
   </div>
-  <div id="sun-moon-container" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-</section>
+
+  <!-- Expanded controls – hidden initially, shown on hover (no track name here) -->
+  <div id="expanded-controls" style="display: none; align-items: center; gap: 20px;">
+    <button id="play-pause-btn" style="background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--accent, #7df9ff); padding: 0;">▶</button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.4" style="width: 100px; height: 4px; -webkit-appearance: none; background: rgba(255,255,255,0.3); border-radius: 4px;">
+  </div>
+
+  <audio id="wave-audio" loop="" src="sounds/waves.mp3" preload="auto"></audio>
+</div>
+
+<style>
+/* Glass base */
+#custom-audio-player {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover state: much wider, slightly squarer, and shows controls */
+#custom-audio-player:hover {
+  border-radius: 20px !important;
+  padding: 8px 35px !important;   /* wide horizontal padding */
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+#custom-audio-player:hover #collapsed-view {
+  display: none;
+}
+
+#custom-audio-player:hover #expanded-controls {
+  display: flex !important;
+}
+
+/* Volume slider thumb */
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent, #7df9ff);
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+/* Play button hover */
+#play-pause-btn:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Remove any leftover white bar */
+body {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#yt-window, .extra-space {
+  display: none;
+}
+</style>
+
+<script>
+(function() {
+  const audio = document.getElementById('wave-audio');
+  const playPauseBtn = document.getElementById('play-pause-btn');
+  const volumeSlider = document.getElementById('volume-slider');
+
+  if (!audio) return;
+
+  let playing = false;
+  audio.volume = parseFloat(volumeSlider.value);
+  audio.loop = true;
+
+  function updateButton() {
+    if (playPauseBtn) {
+      playPauseBtn.textContent = playing ? '⏸' : '▶';
+    }
+  }
+
+  function togglePlay() {
+    if (playing) {
+      audio.pause();
+      playing = false;
+    } else {
+      audio.play().catch(e => console.log('Audio error:', e));
+      playing = true;
+    }
+    updateButton();
+  }
+
+  if (playPauseBtn) {
+    playPauseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePlay();
+    });
+  }
+
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', function() {
+      audio.volume = parseFloat(volumeSlider.value);
+    });
+  }
+})();
+</script>
+</div></section>
 
 <section id="story">
 <div class="dk-wrap">
@@ -178,12 +319,17 @@ ul.task-list li input[type="checkbox"] {
     <div class="glass" style="padding:1.5rem;border-radius:20px;">
       <div style="font-size:1.8rem;margin-bottom:0.5rem;">🌊</div>
       <div style="font-weight:700;font-size:1.2rem;margin-bottom:0.5rem;">Dublin Days &amp; 1am Street Music</div>
-      <p style="margin:0;line-height:1.5;">September 2025 – I landed at DCU, moved into Aspen, made friends from everywhere. Late nights, gaming, random chats. We travelled to Howth, Bray, Malahide. One night at 1am, we found street musicians playing drums and guitar – my friend grabbed the guitar and joined them. I filmed it. That was the real Ireland.</p>
+      <p style="margin:0;line-height:1.5;">September 2025 - I landed at DCU, moved into Aspen, made friends from everywhere. Late nights, gaming, random chats. We travelled to Howth, Bray, Malahide. One night at 1am, we found street musicians playing drums and guitar – my friend grabbed the guitar and joined them. I filmed it. That was the real Ireland.</p>
     </div>
     <div class="glass" style="padding:1.5rem;border-radius:20px;">
       <div style="font-size:1.8rem;margin-bottom:0.5rem;">🍳</div>
       <div style="font-weight:700;font-size:1.2rem;margin-bottom:0.5rem;">Shyness, Cooking, and Calling Home</div>
-      <p style="margin:0;line-height:1.5;">I was always the quiet one in meetings. But I pushed myself into seminars, guest lectures, presentations. It was terrifying – but I did it. Cooking is my anchor: butter chicken, gulab jamuns from bread, whatever reminds me of home. My friends say it's restaurant quality. I call my parents every night. That keeps me grounded.</p>
+      <p style="margin:0;line-height:1.5;">I was always the quiet one in meetings. But I pushed myself into seminars, guest lectures, presentations. It was terrifying - but I did it. Cooking is my anchor: butter chicken, gulab jamuns from bread, whatever reminds me of home. My friends say it's restaurant quality. I call my parents every night. That keeps me grounded.</p>
+    </div>
+    <div class="glass" style="padding:1.5rem;border-radius:20px;">
+      <div style="font-size:1.8rem;margin-bottom:0.5rem;">🎓</div>
+      <div style="font-weight:700;font-size:1.2rem;margin-bottom:0.5rem;">DCU – Where I Learned to Handle Pressure</div>
+      <p style="margin:0;line-height:1.5;">Studying at DCU wasn't just about lectures and assignments. The workload was intense - deadlines, group projects, certifications, reflections, and client presentations all at once. But that pressure shaped me. I learned to manage time, lead a team, and present under stress - like the time I had to prepare a client presentation in two hours and deliver it to the Football Association of Ireland. I still don't know everything perfectly. But I know how to research, structure, communicate, and adapt. Even my English fluency improved - from struggling to find words to confidently speaking in meetings. DCU didn't just give me skills it gave me resilience.</p>
     </div>
   </div>
 </div>
@@ -483,6 +629,47 @@ ul.task-list li input[type="checkbox"] {
 </footer>
 
 <style>
+/* Light mode (default) */
+:root {
+  --bg-0: #fef7e8;   /* warm cream / sand */
+  --bg-1: #f4e4c1;
+  --text-1: #1e293b;
+  --text-2: #5c4b3a;
+  --muted: #6b5b4e;
+  --accent: #f97316;
+  --border-c: rgba(0,0,0,0.1);
+}
+/* Dark mode */
+[data-bs-theme="dark"] {
+  --bg-0: #0a0f1a;   /* deep navy */
+  --bg-1: #0f2a2a;
+  --text-1: #e2e8f0;
+  --text-2: #b0e0ff;
+  --muted: #8e9eae;
+  --accent: #7df9ff;
+  --border-c: rgba(255,255,255,0.15);
+}
+
+/* Apply background to body */
+body {
+  background: var(--bg-0);
+  color: var(--text-1);
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Ensure footer does not create whitespace */
+footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove any extra spacing after footer */
+#site-footer {
+  margin-bottom: 0;
+}
 .sunset-card { padding:0.5rem; border-radius:18px; overflow:hidden; }
 .sunset-card img { width:100%; height:220px; object-fit:cover; border-radius:12px; display:block; }
 
@@ -493,344 +680,125 @@ ul.task-list li input[type="checkbox"] {
   margin-top:0.5rem;
 }
 .gallery-thumb { border-radius:16px; overflow:hidden; cursor:pointer; position:relative; }
-.gallery-thumb img { width:100%; height:130px; object-fit:cover; display:block; border-radius:12px 12px 0 0; transition:transform 0.3s ease; }
-.gallery-thumb:hover img { transform:scale(1.05); }
-.gallery-label { padding:0.45rem 0.7rem; font-size:0.78rem; font-family:'DM Sans',sans-serif; color:var(--text-2); text-align:center; letter-spacing:0.04em; }
+.gallery-thumb img { width:100%; height:130px; object-fit:cover; display:block; }
+.gallery-label { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.45); color:#fff; font-size:0.72rem; padding:0.3rem 0.6rem; text-align:center; }
 
-.lightbox-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.88); z-index:99999; align-items:center; justify-content:center; cursor:zoom-out; }
-.lightbox-overlay.open { display:flex; }
-.lightbox-overlay img { max-width:90vw; max-height:88vh; border-radius:16px; box-shadow:0 20px 80px rgba(0,0,0,0.7); cursor:default; }
-.lightbox-close { position:absolute; top:1.2rem; right:1.5rem; background:none; border:none; color:#fff; font-size:2rem; cursor:pointer; opacity:0.7; transition:opacity 0.2s; }
-.lightbox-close:hover { opacity:1; }
-</style>
+.tab-row { display:flex; flex-wrap:wrap; gap:0.6rem; }
+.tab-btn { background:rgba(255,255,255,0.08); border:1px solid var(--border-c,rgba(255,255,255,0.15)); color:var(--text-1); border-radius:40px; padding:0.45rem 1.1rem; font-size:0.82rem; cursor:pointer; transition:background 0.2s; }
+.tab-btn.on { background:var(--accent,#4a90d9); color:#fff; border-color:transparent; }
+.tab-pane { display:none; margin-top:1.5rem; }
+.tab-pane.on { display:block; }
 
-<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
-
-<style>
-/* ── Spotify-style player ── */
-#spotify-player {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding: 0.8rem 1.3rem;
-  border-radius: 60px;
-  max-width: 520px;
-  position: relative;
+.doc-row { display:flex; align-items:center; gap:1.2rem; padding:1.2rem 1.5rem; border-radius:16px; flex-wrap:wrap; }
+.ext-link { padding:0.45rem 1rem; border-radius:40px; font-size:0.82rem; text-decoration:none; color:var(--text-1); }
+/* Make the wave play button visible */
+#wave-play {
+  background: rgba(0,0,0,0.2) !important;
+  border-radius: 30px !important;
+  padding: 6px 10px !important;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+#wave-play:hover {
+  background: rgba(0,0,0,0.4) !important;
 }
 
-#sp-track-info {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex: 1;
-  min-width: 0;
+/* Remove any extra white space at the bottom */
+body {
+  margin: 0;
+  padding: 0;
 }
-
-#sp-track-icon {
-  font-size: 1.4rem;
-  flex-shrink: 0;
-  animation: sp-pulse 2s ease-in-out infinite;
+footer {
+  margin-bottom: 0;
 }
-
-@keyframes sp-pulse {
-  0%,100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+html, body {
+  height: 100%;
+  background: var(--bg-0); /* ensures full background coverage */
 }
-
-#sp-track-icon.paused { animation: none; }
-
-#sp-track-text { min-width: 0; }
-
-#sp-track-name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-1);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+footer {
+  margin: 0;
+  padding: 0;
 }
-
-#sp-track-sub {
-  font-size: 0.68rem;
-  color: var(--accent);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 0.1rem;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-
-#sp-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  flex-shrink: 0;
+/* Force remove any bottom margin/whitespace */
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
 }
-
-#sp-controls button {
-  background: none;
-  border: none;
-  color: var(--text-2);
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.3rem 0.4rem;
-  border-radius: 50%;
-  transition: color 0.2s, transform 0.15s, background 0.2s;
-  line-height: 1;
+*:last-child {
+  margin-bottom: 0 !important;
 }
-
-#sp-controls button:hover { color: var(--accent); background: var(--tag-bg); transform: scale(1.2); }
-
-#sp-play {
-  font-size: 1.2rem !important;
-  background: var(--accent) !important;
-  color: #fff !important;
-  width: 36px;
-  height: 36px;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50% !important;
-  box-shadow: 0 0 14px var(--glow);
+/* Scroll animation base */
+.animate-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
-
-#sp-play:hover { transform: scale(1.12) !important; background: var(--accent) !important; }
-
-#sp-right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
+.animate-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-#sp-time {
-  font-size: 0.68rem;
-  color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
-  letter-spacing: 0.04em;
-  min-width: 28px;
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
 }
-
-#sp-vol {
-  width: 58px;
-  height: 3px;
-  accent-color: var(--accent);
-  cursor: pointer;
-}
-
-/* Observe-fade */
-.observe-fade { opacity:0; transform:translateY(24px); transition:opacity 0.65s ease,transform 0.65s ease; }
-.observe-fade.visible { opacity:1; transform:translateY(0); }
 </style>
 
 <script>
-/* ══ Dark mode forced — no toggle ══ */
-document.documentElement.setAttribute('data-bs-theme', 'dark');
-
-/* ══ Gallery tabs ══ */
-function showTab(name, btn) {
-  document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('on'); });
-  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('on'); });
-  var pane = document.getElementById('tab-' + name);
-  if (pane) pane.classList.add('on');
-  if (btn) btn.classList.add('on');
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(function(p){ p.classList.remove('on'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('on'); });
+  document.getElementById('tab-' + id).classList.add('on');
+  btn.classList.add('on');
 }
+</script>
 
-/* ══ Lightbox ══ */
-document.querySelectorAll('.gallery-thumb img').forEach(function(img) {
-  img.style.cursor = 'zoom-in';
-  img.addEventListener('click', function(e) {
-    e.stopPropagation();
-    document.getElementById('lightbox-img').src = this.src;
-    document.getElementById('lightbox-img').alt = this.alt;
-    document.getElementById('lightbox').classList.add('open');
-  });
-});
-function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
-document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
-
-/* ══ Intersection observer ══ */
+<script>
+// Dark/light mode toggle
 (function() {
-  var targets = document.querySelectorAll('.glass.skill-card,.glass.proj-card,.glass.cert-item,.glass.hobby-card,.glass.journal-entry');
-  if (!('IntersectionObserver' in window)) { targets.forEach(function(el){el.classList.add('visible');}); return; }
-  var obs = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.12});
-  targets.forEach(function(el){el.classList.add('observe-fade');obs.observe(el);});
-})();
-
-/* ══ Spotify-style music player ══
-   Track list: add more .mp3 files to sounds/ and add entries here.
-   YouTube tracks: use the youtubeId field instead of src.
-   ══════════════════════════════════════════════════════ */
-(function() {
-  var TRACKS = [
-    { name: 'Lofi Beats to Chill and Focus', sub: 'Music to Chill & Focus', src: 'sounds/waves.mp3',  icon: '🎵' },
-    { name: 'Rain to Study To',              sub: 'Music to Chill & Focus', youtubeId: 'q76bMs-NwRk',  icon: '🌧️' }
-    /* ← To add more local tracks:  { name: 'Track Name', sub: 'Music to Chill & Focus', src: 'sounds/your-file.mp3', icon: '🎵' } */
-    /* ← To add more YouTube tracks: { name: 'Track Name', sub: 'Music to Chill & Focus', youtubeId: 'VIDEO_ID', icon: '▶️' } */
-  ];
-
-  var currentIdx = 0;
-  var playing    = false;
-  var ytReady    = false;
-  var ytPlayer   = null;
-
-  var audio     = document.getElementById('wave-audio');
-  var playBtn   = document.getElementById('sp-play');
-  var prevBtn   = document.getElementById('sp-prev');
-  var nextBtn   = document.getElementById('sp-next');
-  var volCtrl   = document.getElementById('sp-vol');
-  var timeEl    = document.getElementById('sp-time');
-  var nameEl    = document.getElementById('sp-track-name');
-  var subEl     = document.getElementById('sp-track-sub');
-  var iconEl    = document.getElementById('sp-track-icon');
-  var ytIframe  = document.getElementById('yt-iframe');
-
-  audio.volume = parseFloat(volCtrl.value);
-
-  /* Load YouTube IFrame API once */
-  function loadYTApi() {
-    if (document.getElementById('yt-api-script')) return;
-    var s = document.createElement('script');
-    s.id  = 'yt-api-script';
-    s.src = 'https://www.youtube.com/iframe_api';
-    document.head.appendChild(s);
-  }
-
-  window.onYouTubeIframeAPIReady = function() {
-    ytReady = true;
-    /* If user already clicked play on a YT track, start it */
-    if (playing && TRACKS[currentIdx].youtubeId) {
-      startYT(TRACKS[currentIdx].youtubeId);
-    }
-  };
-
-  function startYT(videoId) {
-    if (ytPlayer && typeof ytPlayer.loadVideoById === 'function') {
-      ytPlayer.loadVideoById(videoId);
-      ytPlayer.setVolume(parseFloat(volCtrl.value) * 100);
-      ytPlayer.playVideo();
-    } else {
-      ytPlayer = new YT.Player('yt-iframe', {
-        videoId: videoId,
-        playerVars: { autoplay: 1, controls: 0, loop: 1, playlist: videoId },
-        events: {
-          onReady: function(e) {
-            e.target.setVolume(parseFloat(volCtrl.value) * 100);
-            e.target.playVideo();
-          },
-          onStateChange: function(e) {
-            if (e.data === YT.PlayerState.ENDED) nextTrack();
-          }
-        }
-      });
-    }
-  }
-
-  function stopYT() {
-    if (ytPlayer && typeof ytPlayer.pauseVideo === 'function') ytPlayer.pauseVideo();
-  }
-
-  function fmt(s) {
-    s = Math.floor(s || 0);
-    return Math.floor(s/60) + ':' + ('0' + (s%60)).slice(-2);
-  }
-
-  function updateUI(track) {
-    nameEl.textContent = track.name;
-    subEl.textContent  = track.sub;
-    iconEl.textContent = track.icon;
-  }
-
-  function loadTrack(idx) {
-    var track = TRACKS[idx];
-    updateUI(track);
-    /* Stop whatever is running */
-    audio.pause();
-    audio.currentTime = 0;
-    stopYT();
-    timeEl.textContent = '0:00';
-
-    var ytWin = document.getElementById('yt-window');
-    if (track.src) {
-      audio.src = track.src;
-      audio.load();
-      if (ytWin) ytWin.style.display = 'none';
-    } else {
-      audio.src = '';
-      if (ytWin) ytWin.style.display = 'block';
-      loadYTApi();
-    }
-  }
-
-  function play() {
-    var track = TRACKS[currentIdx];
-    if (track.src) {
-      audio.play().catch(function(){});
-    } else {
-      if (ytReady) startYT(track.youtubeId);
-      else loadYTApi();
-    }
-    playing = true;
-    playBtn.textContent = '⏸';
-    iconEl.classList.remove('paused');
-  }
-
-  function pause() {
-    audio.pause();
-    stopYT();
-    playing = false;
-    playBtn.textContent = '▶';
-    iconEl.classList.add('paused');
-  }
-
-  function nextTrack() {
-    currentIdx = (currentIdx + 1) % TRACKS.length;
-    loadTrack(currentIdx);
-    if (playing) play();
-  }
-
-  function prevTrack() {
-    /* If more than 3s into track, restart it; otherwise go back */
-    if (!TRACKS[currentIdx].src || audio.currentTime > 3) {
-      if (TRACKS[currentIdx].src) { audio.currentTime = 0; }
-      else { if (ytPlayer && ytPlayer.seekTo) ytPlayer.seekTo(0); }
-      return;
-    }
-    currentIdx = (currentIdx - 1 + TRACKS.length) % TRACKS.length;
-    loadTrack(currentIdx);
-    if (playing) play();
-  }
-
-  /* Button events */
-  playBtn.addEventListener('click', function() {
-    if (playing) pause(); else play();
+  const html = document.documentElement;
+  const btn  = document.getElementById('toggle-btn');
+  if (!btn) return;
+  const KEY = 'tk-theme';
+  const saved = localStorage.getItem(KEY);
+  const initial = (saved === 'light' ? 'light' : 'dark');
+  html.setAttribute('data-bs-theme', initial);
+  btn.textContent = initial === 'dark' ? '☀️' : '🌙';
+  btn.addEventListener('click', () => {
+    const cur = html.getAttribute('data-bs-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-bs-theme', next);
+    localStorage.setItem(KEY, next);
+    btn.textContent = next === 'dark' ? '☀️' : '🌙';
   });
-  nextBtn.addEventListener('click', nextTrack);
-  prevBtn.addEventListener('click', prevTrack);
-
-  /* Volume */
-  volCtrl.addEventListener('input', function() {
-    var v = parseFloat(volCtrl.value);
-    audio.volume = v;
-    if (ytPlayer && ytPlayer.setVolume) ytPlayer.setVolume(v * 100);
-  });
-
-  /* Time display for local tracks */
-  audio.addEventListener('timeupdate', function() {
-    timeEl.textContent = fmt(audio.currentTime);
-  });
-
-  /* Auto-advance local tracks on end */
-  audio.addEventListener('ended', nextTrack);
-
-  /* Init */
-  loadTrack(currentIdx);
-
 })();
 </script>
+<script>
+  // Smooth scroll for all anchor links (already supported by CSS)
+  // Trigger fade‑in animations on scroll
+  (function() {
+    const animatedElements = document.querySelectorAll('.glass, .cert-item, .hobby-card, .journal-entry, .sunset-card, .gallery-thumb');
+    if (!animatedElements.length) return;
+    
+    // Add the base class for animation
+    animatedElements.forEach(el => el.classList.add('animate-item'));
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    }, { threshold: 0.15 });
+    
+    animatedElements.forEach(el => observer.observe(el));
+  })();
+</script>
+
 
 
 

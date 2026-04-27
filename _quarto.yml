@@ -1,24 +1,39 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - media/**
-    - sounds/**
-    - docs/**
-    - images/**
 
 website:
   title: "Tanishq Katheriya"
-  description: "MSc Business Analytics at DCU – data, cooking, and a spontaneous leap from Bhopal to Dublin."
-  navbar: false
+  favicon: images/favicon.ico
+  navbar:
+    logo: images/logo.png
+    logo-alt: "TK"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Reflections"
+        href: reflections.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right:
+      - text: "CV"
+        href: docs/resume.pdf
+        target: _blank
+      - icon: github
+        href: https://github.com/Tanishq-katheriya
+        target: _blank
+  
 
 format:
   html:
-    theme: [darkly, custom.scss]
+    theme:
+      - flatly
+      - custom.scss
     toc: false
-    page-layout: full
-    include-in-header:
-      text: |
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+
+execute:
+  freeze: auto

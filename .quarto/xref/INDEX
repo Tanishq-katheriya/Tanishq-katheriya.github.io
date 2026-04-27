@@ -1,5 +1,23 @@
 {
+  "about.qmd": {
+    "about.html": "23d11cda"
+  },
+  "contact.qmd": {
+    "contact.html": "48cc7f51"
+  },
   "index.qmd": {
-    "index.html": "c8aff891"
+    "index.html": "34f04e5a"
+  },
+  "projects/genai.qmd": {
+    "genai.html": "2ea1313f"
+  },
+  "projects/index.qmd": {
+    "index.html": "927b20df"
+  },
+  "projects/killala.qmd": {
+    "killala.html": "e97366f9"
+  },
+  "reflections.qmd": {
+    "reflections.html": "34654de1"
   }
 }
